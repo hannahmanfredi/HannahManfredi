@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hannah Manfredi - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: #f8f9fa;
+            padding: 40px 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+            border-radius: 0;
+        }
+        
+        .header {
+            padding: 60px 50px 40px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .name {
+            font-size: 3rem;
+            font-weight: 300;
+            color: #2c3e50;
+            margin-bottom: 10px;
+            letter-spacing: -1px;
+        }
+        
+        .title {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 30px;
+            font-weight: 300;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+        }
+        
+        .contact-info a {
+            color: #3498db;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .summary {
+            padding: 30px 50px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #ecf0f1;
+            font-size: 0.95rem;
+            color: #34495e;
+            line-height: 1.7;
+        }
+        
+        .main-content {
+            padding: 50px;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 30px;
+            height: 2px;
+            background: #3498db;
+        }
+        
+        .skills-container {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+        
+        .skill-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+        }
+        
+        .skill-label {
+            min-width: 120px;
+            font-weight: 600;
+            color: #34495e;
+            font-size: 0.9rem;
+        }
+        
+        .skill-list {
+            color: #7f8c8d;
+            line-height: 1.8;
+        }
+        
+        .experience-item, .education-item {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #ecf0f1;
+        }
+        
+        .experience-item:last-child, .education-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        
+        .job-title, .degree-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 5px;
+        }
+        
+        .company, .school {
+            font-size: 1rem;
+            color: #3498db;
+            margin-bottom: 5px;
+        }
+        
+        .duration, .dates {
+            font-size: 0.85rem;
+            color: #95a5a6;
+            margin-bottom: 15px;
+        }
+        
+        .job-description ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .job-description li {
+            margin-bottom: 8px;
+            color: #7f8c8d;
+            position: relative;
+            padding-left: 15px;
+        }
+        
+        .job-description li::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            color: #3498db;
+        }
+        
+        .note {
+            margin-top: 10px;
+            font-style: italic;
+            color: #7f8c8d;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+                border-radius: 0;
+            }
+            
+            .header, .main-content {
+                padding: 30px 25px;
+            }
+            
+            .name {
+                font-size: 2.2rem;
+            }
+            
+            .contact-info {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .skill-row {
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="name">Hannah Manfredi</h1>
+            <p class="title">Lead UX Designer & Software Engineer</p>
+            <div class="contact-info">
+                <span>707-260-4190</span>
+                <a href="mailto:hannah.k.manfredi@gmail.com">hannah.k.manfredi@gmail.com</a>
+                <span>Remote, USA</span>
+                <a href="https://github.com/hannahmanfredi" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/hannahmanfredi/" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+
+        <div class="summary">
+            <p>Versatile engineer and designer with proven adaptability across diverse domains including space exploration, educational technology, cultural institutions, hospitality, and nonprofit organizations. Demonstrated ability to rapidly learn new technologies and deliver high-impact solutions in complex, evolving environments. Combines technical expertise with design thinking and cross-functional leadership to solve challenging problems at the intersection of technology and human experience.</p>
+        </div>
+
+        <main class="main-content">
+
+
+            <section class="section">
+                <h2 class="section-title">Experience</h2>
+                
+                <div class="experience-item">
+                    <h3 class="job-title">Lead UX Designer & Software Engineer</h3>
+                    <p class="company">NASA</p>
+                    <p class="duration">April 2025 - Present • Contract</p>
+                    <div class="job-description">
+                        <ul>
+                            <li>Promoted to lead UX design while continuing full-stack development responsibilities for space exploration applications</li>
+                            <li>Lead cross-functional design initiatives for human spaceflight mission support systems</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="job-title">Human Performance Data and Software Engineer</h3>
+                    <p class="company">NASA</p>
+                    <p class="duration">October 2023 - April 2025 • Contract</p>
+                    <div class="job-description">
+                        <ul>
+                            <li>Served as Front End Tech Lead for PersEIDS, a React/TypeScript application providing decision support for future human EVA exploration on the Moon and Mars</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="job-title">Software Engineer</h3>
+                    <p class="company">Butter Technologies</p>
+                    <p class="duration">July 2023 - December 2023 • Full-Time</p>
+                    <div class="job-description">
+                        <ul>
+                            <li>Researched, designed and built features for e-commerce sites and an AI ordering system in a full-stack application for food industry distributors</li>
+                            <li>Contributed to RFCs on various topics, including Feature Flags, GitHub hygiene, and pull request processes</li>
+                            <li>Monitored system health and performance using Humio, LogRocket, Cloudflare and Sentry</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="job-title">Front End Software Engineer II / Front End Software Engineer I</h3>
+                    <p class="company">Udacity</p>
+                    <p class="duration">2021 - 2023 • Full-Time</p>
+                    <div class="job-description">
+                        <ul>
+                            <li>Developed RESTful/GraphQL APIs to power client-facing sites</li>
+                            <li>Owned and delivered small-to-medium features from technical design to completion</li>
+                            <li>Collaborated with stakeholders to define requirements, ensuring all needs were met</li>
+                            <li>Maintained and improved core features using JavaScript, TypeScript, React, and Redux for over 160,000 users</li>
+                            <li>Provided on-call support via DataDog for systems in my area</li>
+                            <li>Refactored legacy features using modern technologies like Redux Toolkit, Chakra-UI, and TypeScript</li>
+                            <li>Increased test coverage with Cypress and React Testing Library</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="job-title">Full-stack Software Engineer & Owner</h3>
+                    <p class="company">Rabbit Faulkenstein</p>
+                    <p class="duration">2020 - Present • Contract</p>
+                    <div class="job-description">
+                        <ul>
+                            <li>Independently managed client relationships and delivered high-quality projects on time and within budget</li>
+                            <li>Scoped, designed, and built full-stack digital experiences for various clients, including Trident Wallet, The Exchange Running Collective, AnchorWatch, and Bitcoin Park</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="job-title">Key Account Manager / Senior Account Executive / Account Executive</h3>
+                    <p class="company">BackerKit</p>
+                    <p class="duration">2016 - 2020 • Full-Time</p>
+                    <div class="job-description">
+                        <ul>
+                            <li>Successfully managed key customer relationships and consistently exceeded sales quotas</li>
+                            <li>Collaborated with product, engineering, and customer success teams to drive new feature development and customer acquisition</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="job-title">Development Director</h3>
+                    <p class="company">Headstand (EdTech Nonprofit)</p>
+                    <p class="duration">2015 - 2016 • Full-Time</p>
+                    <div class="job-description">
+                        <ul>
+                            <li>Led development initiatives for nonprofit organization bringing yoga and mindfulness into daily curriculum of public K-12 schools across the Bay Area</li>
+                            <li>Managed complex stakeholder relationships including school administrators, educators, students, and community partners</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="job-title">Personal Assistant</h3>
+                    <p class="company">Chef Charles Phan (The Slanted Door)</p>
+                    <p class="duration">2013 - 2015 • Full-Time</p>
+                    <div class="job-description">
+                        <ul>
+                            <li>Supported renowned chef and entrepreneur in high-pressure, fast-moving restaurant and business operations</li>
+                            <li>Coordinated complex logistics across multiple restaurant locations and business ventures</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="experience-item">
+                    <h3 class="job-title">Publications Department Intern</h3>
+                    <p class="company">Museum of Modern Art (MoMA)</p>
+                    <p class="duration">2012 • Internship</p>
+                    <div class="job-description">
+                        <ul>
+                            <li>Contributed to curatorial and editorial processes at world-renowned cultural institution</li>
+                            <li>Supported publication development and research for museum exhibitions and educational materials</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2 class="section-title">Education</h2>
+                
+                <div class="education-item">
+                    <h3 class="degree-title">AI/ML Product Engineering Immersive</h3>
+                    <p class="school">Deep Atlas</p>
+                    <p class="dates">March 2024</p>
+                </div>
+
+                <div class="education-item">
+                    <h3 class="degree-title">Advanced Software Engineering Immersive</h3>
+                    <p class="school">Hack Reactor</p>
+                    <p class="dates">2020 - 2021</p>
+                </div>
+
+                <div class="education-item">
+                    <h3 class="degree-title">BA Visual & Critical Studies</h3>
+                    <p class="school">The School of the Art Institute of Chicago</p>
+                    <p class="dates">2008 - 2012</p>
+                    <div class="note">
+                        Presidential Merit Scholarship Recipient<br>
+                        Concurrently enrolled in the Theater and Performance Studies Department at the University of Chicago
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
