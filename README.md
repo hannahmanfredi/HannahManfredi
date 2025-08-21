@@ -2,7 +2,7 @@
 
 I’m a developer, designer, writer and voice artist.
 
-Currently a member of the Data and Software Team at NASA, I am working on PersEIDS—Personalized EVA Informatics and Decision Support.
+Currently a member of the Data and Software Team at NASA, working on PersEIDS—Personalized EVA Informatics and Decision Support for future missions to the Moon and Mars.
 
 🔭 **[Portfolio](https://hannahmanfredi.github.io/HannahManfredi/)** | 🚀 **[Resume](https://hannahmanfredi.github.io/HannahManfredi/resume.html)**
 
